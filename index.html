@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#f6f5f0" />
+    <meta
+      name="description"
+      content="CURVE: Curvature-Guided Replanning for Action Chunks. Explore synchronized eight-method demonstrations on OpenPI pi0.5 and LIBERO-10."
+    />
+    <title>CURVE — Replanning in motion</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/site.css" />
+    <script defer src="assets/data.js"></script>
+    <script defer src="assets/site.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#comparisons">Skip to demonstrations</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="#top" aria-label="CURVE home"
+          ><svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M26 7C7-2 0 20 13 25c8 4 16-3 13-9-3-7-13-4-12 2" /></svg
+          >CURVE<span class="wordmark-dot">.</span></a
+        >
+        <nav aria-label="Main navigation">
+          <a href="#highlights">Demonstrations</a>
+          <a href="#comparisons">Comparisons</a>
+          <a href="#method">The idea <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero container" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span> OpenPI π₀.₅ ·
+            LIBERO-10
+          </p>
+          <h1 id="hero-title">
+            When the future<br />becomes <em>history.</em>
+          </h1>
+          <p class="paper-subtitle">
+            Curvature-Guided Replanning for Action Chunks
+          </p>
+          <p class="hero-description">
+            CURVE uses the geometry of past action generation to shape the next
+            action chunk, guided by the robot’s latest observation.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#highlights"
+              >Watch CURVE in action <span aria-hidden="true">↗</span></a
+            >
+            <a class="text-link" href="#comparisons"
+              >Compare methods <span aria-hidden="true">→</span></a
+            >
+          </div>
+          <div class="research-tags" aria-label="Method properties">
+            <span>History as geometry</span><span>Training-free</span
+            ><span>Closed-loop replanning</span>
+          </div>
+        </div>
+        <figure class="hero-figure">
+          <div class="figure-topline">
+            <span>HISTORY → ACTION</span
+            ><span class="live-label">CURVE in action</span>
+          </div>
+          <div class="hero-main-image">
+            <img
+              id="hero-image"
+              src="assets/posters/hero_step447.jpg"
+              width="512"
+              height="512"
+              alt="CURVE places both moka pots on the stove."
+              fetchpriority="high"
+            />
+            <span class="image-label"
+              ><span class="status-dot" aria-hidden="true"></span> CURVE
+              <span class="label-divider">/</span> Task complete</span
+            >
+          </div>
+          <div class="filmstrip" id="hero-filmstrip"></div>
+          <figcaption>
+            Two moka pots, one stove.<br /><span
+              >From the first movement to a completed task.</span
+            >
+          </figcaption>
+        </figure>
+      </section>
+
+      <section
+        id="highlights"
+        class="highlights-section container"
+        aria-labelledby="highlights-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">CURVE IN ACTION</p>
+            <h2 id="highlights-title">See the task through.</h2>
+          </div>
+          <p>
+            Place, close, arrange.<br />Three selected moments of successful
+            manipulation.
+          </p>
+        </div>
+        <div class="highlight-grid" id="highlight-grid"></div>
+      </section>
+
+      <section
+        id="comparisons"
+        class="comparison-section"
+        aria-labelledby="comparison-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">SIDE BY SIDE</p>
+              <h2 id="comparison-title">One scene. Eight approaches.</h2>
+            </div>
+            <p>
+              Selected examples of successful and earlier completion.<br />The
+              same task, shown across all eight methods.
+            </p>
+          </div>
+          <div class="collection-toolbar">
+            <div class="segmented" role="group" aria-label="Demo collection">
+              <button type="button" data-group="main" aria-pressed="true">
+                Featured tasks <span>10</span>
+              </button>
+              <button
+                type="button"
+                data-group="supplemental"
+                aria-pressed="false"
+              >
+                More examples <span>10</span>
+              </button>
+            </div>
+            <label class="task-filter" for="task-filter"
+              >Task
+              <select id="task-filter">
+                <option value="all">All tasks</option>
+              </select></label
+            >
+          </div>
+          <p id="collection-description" class="collection-description">
+            Explore ten different tasks.
+          </p>
+          <div
+            id="case-grid"
+            class="case-grid"
+            aria-label="Choose a recorded episode"
+          ></div>
+
+          <article
+            class="viewer-card"
+            id="comparison-viewer"
+            aria-labelledby="case-title"
+          >
+            <div class="viewer-heading">
+              <div>
+                <p class="eyebrow" id="case-code">SEQUENTIAL PLACEMENT</p>
+                <h3 id="case-title">Put both moka pots on the stove</h3>
+              </div>
+              <span class="case-position" id="case-position">01 / 10</span>
+            </div>
+            <div class="comparison-player-wrap">
+              <video
+                id="comparison-video"
+                class="comparison-video"
+                controls
+                playsinline
+                preload="none"
+                aria-label="Synchronized comparison of all eight methods"
+                poster="assets/posters/task08_init02_overview.jpg"
+              ></video>
+              <button class="play-overlay" id="play-comparison" type="button">
+                <span class="play-icon" aria-hidden="true">▶</span
+                ><span>Play comparison</span>
+              </button>
+            </div>
+            <p class="media-error" id="comparison-error" role="alert" hidden>
+              Video could not be loaded.
+              <a
+                id="comparison-error-link"
+                href="comparison_videos/task08_init02_all_methods.mp4"
+                >Open the video</a
+              >.
+            </p>
+            <div class="player-toolbar">
+              <span class="playback-label">All methods, playing together</span>
+              <div class="player-actions">
+                <button type="button" class="small-button" id="restart-video">
+                  <span aria-hidden="true">↺</span> Restart
+                </button>
+                <button
+                  type="button"
+                  class="small-button accent"
+                  id="jump-completion"
+                >
+                  See CURVE finish <span aria-hidden="true">→</span>
+                </button>
+                <a
+                  class="small-button"
+                  id="download-comparison"
+                  href="comparison_videos/task08_init02_all_methods.mp4"
+                  download
+                  >Download video <span aria-hidden="true">↓</span></a
+                >
+              </div>
+            </div>
+            <div class="case-insight">
+              <span class="eyebrow">IN THIS EPISODE</span>
+              <p id="advantage-summary"></p>
+            </div>
+            <div class="comparison-secondary-actions">
+              <button type="button" class="text-link" id="watch-curve-alone">
+                Watch CURVE on its own <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+            <details id="comparison-results" class="result-disclosure">
+              <summary>
+                <span>Explore all eight outcomes</span
+                ><span class="disclosure-icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="results-layout">
+                <div class="results-intro">
+                  <p class="eyebrow">THIS EXAMPLE</p>
+                  <h4>The full comparison.</h4>
+                  <p>
+                    Steps to successful completion, for each method on this
+                    episode.
+                  </p>
+                </div>
+                <div class="result-table-wrap">
+                  <table class="result-table">
+                    <caption class="sr-only">
+                      Recorded outcomes and completion steps for all eight
+                      methods
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Method</th>
+                        <th scope="col" class="timeline-column">
+                          Steps to completion
+                        </th>
+                        <th scope="col">Outcome</th>
+                        <th scope="col" class="number">Steps</th>
+                      </tr>
+                    </thead>
+                    <tbody id="result-rows"></tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="viewer-footnote">
+                <span
+                  >All methods begin from the same scene and play
+                  together.</span
+                >
+                <span>Current step <strong id="current-step">000</strong></span>
+              </div>
+            </details>
+          </article>
+        </div>
+      </section>
+
+      <section
+        id="single-method"
+        class="single-section container"
+        aria-labelledby="single-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">A CLOSER LOOK</p>
+            <h2 id="single-title">Follow a single method.</h2>
+          </div>
+          <p>
+            Follow the full movement in detail.<br />Choose a task and a method
+            to watch on its own.
+          </p>
+        </div>
+        <div class="single-layout">
+          <div class="single-controls">
+            <label for="single-case">Task example</label
+            ><select id="single-case"></select>
+            <label for="single-method-select">Method</label
+            ><select id="single-method-select"></select>
+            <div class="single-detail">
+              <p class="eyebrow" id="single-code"></p>
+              <h3 id="single-task-title"></h3>
+              <div class="single-facts">
+                <div>
+                  <span>Outcome</span><strong id="single-outcome"></strong>
+                </div>
+              </div>
+              <details class="single-completion-details">
+                <summary>View completion details</summary>
+                <p>
+                  Steps to successful completion:
+                  <strong id="single-steps"></strong>
+                </p>
+              </details>
+              <a id="download-single" class="button secondary" download
+                >Download this video <span aria-hidden="true">↓</span></a
+              >
+            </div>
+          </div>
+          <div class="single-player-card">
+            <div class="single-player-heading">
+              <strong id="single-method-name">CURVE</strong
+              ><span>FULL TASK VIDEO</span>
+            </div>
+            <div class="single-player-wrap">
+              <video
+                id="single-video"
+                controls
+                playsinline
+                preload="none"
+                aria-label="Individual method demonstration"
+              ></video
+              ><button class="play-overlay" id="play-single" type="button">
+                <span class="play-icon" aria-hidden="true">▶</span
+                ><span>Play video</span>
+              </button>
+            </div>
+            <p class="media-error" id="single-error" role="alert" hidden>
+              Video could not be loaded.
+              <a id="single-error-link">Open the video</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="method"
+        class="method-section"
+        aria-labelledby="method-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">THE IDEA</p>
+              <h2 id="method-title">History becomes geometry.</h2>
+            </div>
+            <p>
+              The past shapes how a chunk is generated.<br />The present
+              determines what is generated.
+            </p>
+          </div>
+          <div class="method-grid">
+            <article>
+              <svg
+                class="idea-illustration"
+                viewBox="0 0 280 110"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20 86C55 87 56 15 102 29S158 109 202 62S236 36 261 21"
+                  class="idea-path faint"
+                />
+                <path
+                  d="M20 86C61 92 63 31 104 40S162 101 204 57S239 27 261 21"
+                  class="idea-path"
+                />
+                <circle cx="20" cy="86" r="5" />
+                <circle cx="261" cy="21" r="5" />
+                <path
+                  d="M88 19L78 60M155 48L151 90M210 32L225 69"
+                  class="idea-tick"
+                />
+              </svg>
+              <h3>Read the shape of the past.</h3>
+              <p>
+                Completed action generations carry directional structure. CURVE
+                distills their bending into a geometric memory.
+              </p>
+            </article>
+            <article>
+              <svg
+                class="idea-illustration"
+                viewBox="0 0 280 110"
+                aria-hidden="true"
+              >
+                <g transform="translate(139 56) rotate(-23)">
+                  <ellipse rx="92" ry="37" class="idea-ellipse" />
+                  <ellipse rx="63" ry="25" class="idea-ellipse" />
+                  <ellipse rx="31" ry="13" class="idea-ellipse" />
+                </g>
+                <path
+                  d="M36 93C83 98 107 42 149 53S202 44 250 16"
+                  class="idea-path"
+                />
+                <circle cx="149" cy="53" r="5" />
+              </svg>
+              <h3>Shape the next generation.</h3>
+              <p>
+                This memory shapes the next action chunk while the current
+                observation guides what the robot should do.
+              </p>
+            </article>
+            <article>
+              <svg
+                class="idea-illustration"
+                viewBox="0 0 280 110"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20 82C73 80 82 56 115 56S178 38 207 37S240 33 264 18"
+                  class="idea-path faint"
+                />
+                <path d="M20 82C73 80 82 56 115 56" class="idea-path" />
+                <circle cx="20" cy="82" r="5" />
+                <circle cx="115" cy="56" r="7" />
+                <path d="M131 18C168 5 185 57 156 74" class="idea-tick" />
+                <path d="M155 65L155 75L165 73" class="idea-tick" />
+                <path d="M115 56C159 78 188 93 248 62" class="idea-path" />
+              </svg>
+              <h3>Act, observe, replan.</h3>
+              <p>
+                Execute part of the chunk, observe the scene again, and repeat.
+                Each new generation responds to the latest feedback.
+              </p>
+            </article>
+          </div>
+          <p class="method-note">
+            A training-free approach to action-chunk replanning, demonstrated
+            with OpenPI π₀.₅ on LIBERO-10.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="container site-footer">
+      <div>
+        <a class="wordmark" href="#top"
+          >CURVE<span class="wordmark-dot">.</span></a
+        >
+        <p>Curvature-Guided Replanning for Action Chunks</p>
+      </div>
+      <span>Anonymous research demonstration</span
+      ><a class="text-link" href="#top"
+        >Back to top <span aria-hidden="true">↑</span></a
+      >
+    </footer>
+    <noscript
+      ><div class="noscript-notice">
+        JavaScript enables episode selection. You can also browse the
+        <a href="MAIN_SHOWCASE.md">main showcase</a> and
+        <a href="SUPPLEMENTAL_SHOWCASE.md">supplemental showcase</a>.
+      </div></noscript
+    >
+  </body>
+</html>

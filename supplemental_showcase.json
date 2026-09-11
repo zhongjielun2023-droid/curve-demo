@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "showcase_group": "supplemental",
+  "cases": [
+    {
+      "case_id": "task02_init24",
+      "overview_video": "comparison_videos/task02_init24_all_methods.mp4"
+    },
+    {
+      "case_id": "task03_init02",
+      "overview_video": "comparison_videos/task03_init02_all_methods.mp4"
+    },
+    {
+      "case_id": "task05_init16",
+      "overview_video": "comparison_videos/task05_init16_all_methods.mp4"
+    },
+    {
+      "case_id": "task09_init04",
+      "overview_video": "comparison_videos/task09_init04_all_methods.mp4"
+    },
+    {
+      "case_id": "task02_init05",
+      "overview_video": "comparison_videos/task02_init05_all_methods.mp4"
+    },
+    {
+      "case_id": "task07_init10",
+      "overview_video": "comparison_videos/task07_init10_all_methods.mp4"
+    },
+    {
+      "case_id": "task00_init49",
+      "overview_video": "comparison_videos/task00_init49_all_methods.mp4"
+    },
+    {
+      "case_id": "task08_init09",
+      "overview_video": "comparison_videos/task08_init09_all_methods.mp4"
+    },
+    {
+      "case_id": "task08_init04",
+      "overview_video": "comparison_videos/task08_init04_all_methods.mp4"
+    },
+    {
+      "case_id": "task08_init21",
+      "overview_video": "comparison_videos/task08_init21_all_methods.mp4"
+    }
+  ]
+}
