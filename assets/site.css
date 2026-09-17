@@ -590,7 +590,7 @@ select {
 }
 .comparison-video {
   width: 100%;
-  aspect-ratio: 2048/1168;
+  aspect-ratio: 2048/1096;
   background: #111814;
 }
 .player-toolbar {
@@ -878,7 +878,7 @@ select {
 }
 .single-player-card video {
   width: 100%;
-  aspect-ratio: 512/584;
+  aspect-ratio: 512/548;
   background: #111814;
   border-radius: 2px;
 }

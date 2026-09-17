@@ -1,15 +1,15 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "method": "GRACE",
   "showcase_group": "supplemental",
   "cases": [
     {
-      "case_id": "task08_init29_seed47",
-      "task_id": 8,
-      "init_index": 29,
-      "seed": 47,
+      "case_id": "two-pots-02",
+      "task_key": "two-pots",
+      "label": "Two pots on the stove",
+      "category": "Sequential placement",
+      "example_number": 2,
       "description": "put both moka pots on the stove",
-      "overview_video": "comparison_videos/task08_init29_seed47_all_methods.mp4",
       "showcase_group": "supplemental",
       "advantage": {
         "grace_completion_step": 402,
@@ -37,6 +37,7 @@
         "lead_fraction": 0.073732719,
         "majority_comparators_fail": true
       },
+      "overview_video": "comparison_videos/two-pots-02_all_methods.mp4",
       "failed_comparators": [
         "Native",
         "SEAM",
@@ -49,86 +50,86 @@
         {
           "method": "Native",
           "slug": "native",
-          "video": "single_method_videos/task08_init29_seed47_native.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init29_seed47_native.jpg"
+          "video": "single_method_videos/two-pots-02_native.mp4",
+          "poster": "assets/posters/two-pots-02_native.jpg"
         },
         {
           "method": "SEAM",
           "slug": "seam",
-          "video": "single_method_videos/task08_init29_seed47_seam.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init29_seed47_seam.jpg"
+          "video": "single_method_videos/two-pots-02_seam.mp4",
+          "poster": "assets/posters/two-pots-02_seam.jpg"
         },
         {
           "method": "RTC",
           "slug": "rtc",
-          "video": "single_method_videos/task08_init29_seed47_rtc.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init29_seed47_rtc.jpg"
+          "video": "single_method_videos/two-pots-02_rtc.mp4",
+          "poster": "assets/posters/two-pots-02_rtc.jpg"
         },
         {
           "method": "POTR",
           "slug": "potr",
-          "video": "single_method_videos/task08_init29_seed47_potr.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init29_seed47_potr.jpg"
+          "video": "single_method_videos/two-pots-02_potr.mp4",
+          "poster": "assets/posters/two-pots-02_potr.jpg"
         },
         {
           "method": "BID-Backward",
           "slug": "bid_backward",
-          "video": "single_method_videos/task08_init29_seed47_bid_backward.mp4",
           "success": true,
           "recorded_action_steps": 434,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init29_seed47_bid_backward.jpg"
+          "video": "single_method_videos/two-pots-02_bid_backward.mp4",
+          "poster": "assets/posters/two-pots-02_bid_backward.jpg"
         },
         {
           "method": "DVAC",
           "slug": "dvac",
-          "video": "single_method_videos/task08_init29_seed47_dvac.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init29_seed47_dvac.jpg"
+          "video": "single_method_videos/two-pots-02_dvac.mp4",
+          "poster": "assets/posters/two-pots-02_dvac.jpg"
         },
         {
           "method": "PACE",
           "slug": "pace",
-          "video": "single_method_videos/task08_init29_seed47_pace.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init29_seed47_pace.jpg"
+          "video": "single_method_videos/two-pots-02_pace.mp4",
+          "poster": "assets/posters/two-pots-02_pace.jpg"
         },
         {
           "method": "GRACE",
           "slug": "grace",
-          "video": "single_method_videos/task08_init29_seed47_grace.mp4",
           "success": true,
           "recorded_action_steps": 402,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init29_seed47_grace.jpg"
+          "video": "single_method_videos/two-pots-02_grace.mp4",
+          "poster": "assets/posters/two-pots-02_grace.jpg"
         }
       ],
-      "poster": "assets/posters/task08_init29_seed47_overview.jpg",
-      "thumbnail": "assets/posters/task08_init29_seed47_scene.jpg"
+      "poster": "assets/posters/two-pots-02_overview.jpg",
+      "thumbnail": "assets/posters/two-pots-02_scene.jpg"
     },
     {
-      "case_id": "task08_init02_seed97",
-      "task_id": 8,
-      "init_index": 2,
-      "seed": 97,
+      "case_id": "two-pots-03",
+      "task_key": "two-pots",
+      "label": "Two pots on the stove",
+      "category": "Sequential placement",
+      "example_number": 3,
       "description": "put both moka pots on the stove",
-      "overview_video": "comparison_videos/task08_init02_seed97_all_methods.mp4",
       "showcase_group": "supplemental",
       "advantage": {
         "grace_completion_step": 455,
@@ -156,6 +157,7 @@
         "lead_fraction": 0.046121593,
         "majority_comparators_fail": true
       },
+      "overview_video": "comparison_videos/two-pots-03_all_methods.mp4",
       "failed_comparators": [
         "Native",
         "SEAM",
@@ -168,86 +170,86 @@
         {
           "method": "Native",
           "slug": "native",
-          "video": "single_method_videos/task08_init02_seed97_native.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init02_seed97_native.jpg"
+          "video": "single_method_videos/two-pots-03_native.mp4",
+          "poster": "assets/posters/two-pots-03_native.jpg"
         },
         {
           "method": "SEAM",
           "slug": "seam",
-          "video": "single_method_videos/task08_init02_seed97_seam.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init02_seed97_seam.jpg"
+          "video": "single_method_videos/two-pots-03_seam.mp4",
+          "poster": "assets/posters/two-pots-03_seam.jpg"
         },
         {
           "method": "RTC",
           "slug": "rtc",
-          "video": "single_method_videos/task08_init02_seed97_rtc.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init02_seed97_rtc.jpg"
+          "video": "single_method_videos/two-pots-03_rtc.mp4",
+          "poster": "assets/posters/two-pots-03_rtc.jpg"
         },
         {
           "method": "POTR",
           "slug": "potr",
-          "video": "single_method_videos/task08_init02_seed97_potr.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init02_seed97_potr.jpg"
+          "video": "single_method_videos/two-pots-03_potr.mp4",
+          "poster": "assets/posters/two-pots-03_potr.jpg"
         },
         {
           "method": "BID-Backward",
           "slug": "bid_backward",
-          "video": "single_method_videos/task08_init02_seed97_bid_backward.mp4",
           "success": true,
           "recorded_action_steps": 477,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init02_seed97_bid_backward.jpg"
+          "video": "single_method_videos/two-pots-03_bid_backward.mp4",
+          "poster": "assets/posters/two-pots-03_bid_backward.jpg"
         },
         {
           "method": "DVAC",
           "slug": "dvac",
-          "video": "single_method_videos/task08_init02_seed97_dvac.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init02_seed97_dvac.jpg"
+          "video": "single_method_videos/two-pots-03_dvac.mp4",
+          "poster": "assets/posters/two-pots-03_dvac.jpg"
         },
         {
           "method": "PACE",
           "slug": "pace",
-          "video": "single_method_videos/task08_init02_seed97_pace.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init02_seed97_pace.jpg"
+          "video": "single_method_videos/two-pots-03_pace.mp4",
+          "poster": "assets/posters/two-pots-03_pace.jpg"
         },
         {
           "method": "GRACE",
           "slug": "grace",
-          "video": "single_method_videos/task08_init02_seed97_grace.mp4",
           "success": true,
           "recorded_action_steps": 455,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init02_seed97_grace.jpg"
+          "video": "single_method_videos/two-pots-03_grace.mp4",
+          "poster": "assets/posters/two-pots-03_grace.jpg"
         }
       ],
-      "poster": "assets/posters/task08_init02_seed97_overview.jpg",
-      "thumbnail": "assets/posters/task08_init02_seed97_scene.jpg"
+      "poster": "assets/posters/two-pots-03_overview.jpg",
+      "thumbnail": "assets/posters/two-pots-03_scene.jpg"
     },
     {
-      "case_id": "task08_init38_seed17",
-      "task_id": 8,
-      "init_index": 38,
-      "seed": 17,
+      "case_id": "two-pots-04",
+      "task_key": "two-pots",
+      "label": "Two pots on the stove",
+      "category": "Sequential placement",
+      "example_number": 4,
       "description": "put both moka pots on the stove",
-      "overview_video": "comparison_videos/task08_init38_seed17_all_methods.mp4",
       "showcase_group": "supplemental",
       "advantage": {
         "grace_completion_step": 483,
@@ -275,6 +277,7 @@
         "lead_fraction": 0.022267206,
         "majority_comparators_fail": true
       },
+      "overview_video": "comparison_videos/two-pots-04_all_methods.mp4",
       "failed_comparators": [
         "Native",
         "SEAM",
@@ -287,86 +290,86 @@
         {
           "method": "Native",
           "slug": "native",
-          "video": "single_method_videos/task08_init38_seed17_native.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init38_seed17_native.jpg"
+          "video": "single_method_videos/two-pots-04_native.mp4",
+          "poster": "assets/posters/two-pots-04_native.jpg"
         },
         {
           "method": "SEAM",
           "slug": "seam",
-          "video": "single_method_videos/task08_init38_seed17_seam.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init38_seed17_seam.jpg"
+          "video": "single_method_videos/two-pots-04_seam.mp4",
+          "poster": "assets/posters/two-pots-04_seam.jpg"
         },
         {
           "method": "RTC",
           "slug": "rtc",
-          "video": "single_method_videos/task08_init38_seed17_rtc.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init38_seed17_rtc.jpg"
+          "video": "single_method_videos/two-pots-04_rtc.mp4",
+          "poster": "assets/posters/two-pots-04_rtc.jpg"
         },
         {
           "method": "POTR",
           "slug": "potr",
-          "video": "single_method_videos/task08_init38_seed17_potr.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init38_seed17_potr.jpg"
+          "video": "single_method_videos/two-pots-04_potr.mp4",
+          "poster": "assets/posters/two-pots-04_potr.jpg"
         },
         {
           "method": "BID-Backward",
           "slug": "bid_backward",
-          "video": "single_method_videos/task08_init38_seed17_bid_backward.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init38_seed17_bid_backward.jpg"
+          "video": "single_method_videos/two-pots-04_bid_backward.mp4",
+          "poster": "assets/posters/two-pots-04_bid_backward.jpg"
         },
         {
           "method": "DVAC",
           "slug": "dvac",
-          "video": "single_method_videos/task08_init38_seed17_dvac.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init38_seed17_dvac.jpg"
+          "video": "single_method_videos/two-pots-04_dvac.mp4",
+          "poster": "assets/posters/two-pots-04_dvac.jpg"
         },
         {
           "method": "PACE",
           "slug": "pace",
-          "video": "single_method_videos/task08_init38_seed17_pace.mp4",
           "success": true,
           "recorded_action_steps": 494,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init38_seed17_pace.jpg"
+          "video": "single_method_videos/two-pots-04_pace.mp4",
+          "poster": "assets/posters/two-pots-04_pace.jpg"
         },
         {
           "method": "GRACE",
           "slug": "grace",
-          "video": "single_method_videos/task08_init38_seed17_grace.mp4",
           "success": true,
           "recorded_action_steps": 483,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init38_seed17_grace.jpg"
+          "video": "single_method_videos/two-pots-04_grace.mp4",
+          "poster": "assets/posters/two-pots-04_grace.jpg"
         }
       ],
-      "poster": "assets/posters/task08_init38_seed17_overview.jpg",
-      "thumbnail": "assets/posters/task08_init38_seed17_scene.jpg"
+      "poster": "assets/posters/two-pots-04_overview.jpg",
+      "thumbnail": "assets/posters/two-pots-04_scene.jpg"
     },
     {
-      "case_id": "task08_init04_seed47",
-      "task_id": 8,
-      "init_index": 4,
-      "seed": 47,
+      "case_id": "two-pots-05",
+      "task_key": "two-pots",
+      "label": "Two pots on the stove",
+      "category": "Sequential placement",
+      "example_number": 5,
       "description": "put both moka pots on the stove",
-      "overview_video": "comparison_videos/task08_init04_seed47_all_methods.mp4",
       "showcase_group": "supplemental",
       "advantage": {
         "grace_completion_step": 446,
@@ -389,6 +392,7 @@
         "lead_fraction": 0.0,
         "majority_comparators_fail": true
       },
+      "overview_video": "comparison_videos/two-pots-05_all_methods.mp4",
       "failed_comparators": [
         "Native",
         "SEAM",
@@ -401,86 +405,86 @@
         {
           "method": "Native",
           "slug": "native",
-          "video": "single_method_videos/task08_init04_seed47_native.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init04_seed47_native.jpg"
+          "video": "single_method_videos/two-pots-05_native.mp4",
+          "poster": "assets/posters/two-pots-05_native.jpg"
         },
         {
           "method": "SEAM",
           "slug": "seam",
-          "video": "single_method_videos/task08_init04_seed47_seam.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init04_seed47_seam.jpg"
+          "video": "single_method_videos/two-pots-05_seam.mp4",
+          "poster": "assets/posters/two-pots-05_seam.jpg"
         },
         {
           "method": "RTC",
           "slug": "rtc",
-          "video": "single_method_videos/task08_init04_seed47_rtc.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init04_seed47_rtc.jpg"
+          "video": "single_method_videos/two-pots-05_rtc.mp4",
+          "poster": "assets/posters/two-pots-05_rtc.jpg"
         },
         {
           "method": "POTR",
           "slug": "potr",
-          "video": "single_method_videos/task08_init04_seed47_potr.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init04_seed47_potr.jpg"
+          "video": "single_method_videos/two-pots-05_potr.mp4",
+          "poster": "assets/posters/two-pots-05_potr.jpg"
         },
         {
           "method": "BID-Backward",
           "slug": "bid_backward",
-          "video": "single_method_videos/task08_init04_seed47_bid_backward.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init04_seed47_bid_backward.jpg"
+          "video": "single_method_videos/two-pots-05_bid_backward.mp4",
+          "poster": "assets/posters/two-pots-05_bid_backward.jpg"
         },
         {
           "method": "DVAC",
           "slug": "dvac",
-          "video": "single_method_videos/task08_init04_seed47_dvac.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init04_seed47_dvac.jpg"
+          "video": "single_method_videos/two-pots-05_dvac.mp4",
+          "poster": "assets/posters/two-pots-05_dvac.jpg"
         },
         {
           "method": "PACE",
           "slug": "pace",
-          "video": "single_method_videos/task08_init04_seed47_pace.mp4",
           "success": true,
           "recorded_action_steps": 446,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init04_seed47_pace.jpg"
+          "video": "single_method_videos/two-pots-05_pace.mp4",
+          "poster": "assets/posters/two-pots-05_pace.jpg"
         },
         {
           "method": "GRACE",
           "slug": "grace",
-          "video": "single_method_videos/task08_init04_seed47_grace.mp4",
           "success": true,
           "recorded_action_steps": 446,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init04_seed47_grace.jpg"
+          "video": "single_method_videos/two-pots-05_grace.mp4",
+          "poster": "assets/posters/two-pots-05_grace.jpg"
         }
       ],
-      "poster": "assets/posters/task08_init04_seed47_overview.jpg",
-      "thumbnail": "assets/posters/task08_init04_seed47_scene.jpg"
+      "poster": "assets/posters/two-pots-05_overview.jpg",
+      "thumbnail": "assets/posters/two-pots-05_scene.jpg"
     },
     {
-      "case_id": "task08_init10_seed17",
-      "task_id": 8,
-      "init_index": 10,
-      "seed": 17,
+      "case_id": "two-pots-06",
+      "task_key": "two-pots",
+      "label": "Two pots on the stove",
+      "category": "Sequential placement",
+      "example_number": 6,
       "description": "put both moka pots on the stove",
-      "overview_video": "comparison_videos/task08_init10_seed17_all_methods.mp4",
       "showcase_group": "supplemental",
       "advantage": {
         "grace_completion_step": 389,
@@ -501,6 +505,7 @@
         "lead_fraction": -0.029100529,
         "majority_comparators_fail": true
       },
+      "overview_video": "comparison_videos/two-pots-06_all_methods.mp4",
       "failed_comparators": [
         "SEAM",
         "RTC",
@@ -513,86 +518,86 @@
         {
           "method": "Native",
           "slug": "native",
-          "video": "single_method_videos/task08_init10_seed17_native.mp4",
           "success": true,
           "recorded_action_steps": 378,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init10_seed17_native.jpg"
+          "video": "single_method_videos/two-pots-06_native.mp4",
+          "poster": "assets/posters/two-pots-06_native.jpg"
         },
         {
           "method": "SEAM",
           "slug": "seam",
-          "video": "single_method_videos/task08_init10_seed17_seam.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init10_seed17_seam.jpg"
+          "video": "single_method_videos/two-pots-06_seam.mp4",
+          "poster": "assets/posters/two-pots-06_seam.jpg"
         },
         {
           "method": "RTC",
           "slug": "rtc",
-          "video": "single_method_videos/task08_init10_seed17_rtc.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init10_seed17_rtc.jpg"
+          "video": "single_method_videos/two-pots-06_rtc.mp4",
+          "poster": "assets/posters/two-pots-06_rtc.jpg"
         },
         {
           "method": "POTR",
           "slug": "potr",
-          "video": "single_method_videos/task08_init10_seed17_potr.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init10_seed17_potr.jpg"
+          "video": "single_method_videos/two-pots-06_potr.mp4",
+          "poster": "assets/posters/two-pots-06_potr.jpg"
         },
         {
           "method": "BID-Backward",
           "slug": "bid_backward",
-          "video": "single_method_videos/task08_init10_seed17_bid_backward.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init10_seed17_bid_backward.jpg"
+          "video": "single_method_videos/two-pots-06_bid_backward.mp4",
+          "poster": "assets/posters/two-pots-06_bid_backward.jpg"
         },
         {
           "method": "DVAC",
           "slug": "dvac",
-          "video": "single_method_videos/task08_init10_seed17_dvac.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init10_seed17_dvac.jpg"
+          "video": "single_method_videos/two-pots-06_dvac.mp4",
+          "poster": "assets/posters/two-pots-06_dvac.jpg"
         },
         {
           "method": "PACE",
           "slug": "pace",
-          "video": "single_method_videos/task08_init10_seed17_pace.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init10_seed17_pace.jpg"
+          "video": "single_method_videos/two-pots-06_pace.mp4",
+          "poster": "assets/posters/two-pots-06_pace.jpg"
         },
         {
           "method": "GRACE",
           "slug": "grace",
-          "video": "single_method_videos/task08_init10_seed17_grace.mp4",
           "success": true,
           "recorded_action_steps": 389,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init10_seed17_grace.jpg"
+          "video": "single_method_videos/two-pots-06_grace.mp4",
+          "poster": "assets/posters/two-pots-06_grace.jpg"
         }
       ],
-      "poster": "assets/posters/task08_init10_seed17_overview.jpg",
-      "thumbnail": "assets/posters/task08_init10_seed17_scene.jpg"
+      "poster": "assets/posters/two-pots-06_overview.jpg",
+      "thumbnail": "assets/posters/two-pots-06_scene.jpg"
     },
     {
-      "case_id": "task08_init23_seed27",
-      "task_id": 8,
-      "init_index": 23,
-      "seed": 27,
+      "case_id": "two-pots-07",
+      "task_key": "two-pots",
+      "label": "Two pots on the stove",
+      "category": "Sequential placement",
+      "example_number": 7,
       "description": "put both moka pots on the stove",
-      "overview_video": "comparison_videos/task08_init23_seed27_all_methods.mp4",
       "showcase_group": "supplemental",
       "advantage": {
         "grace_completion_step": 509,
@@ -613,6 +618,7 @@
         "lead_fraction": -0.030364372,
         "majority_comparators_fail": true
       },
+      "overview_video": "comparison_videos/two-pots-07_all_methods.mp4",
       "failed_comparators": [
         "Native",
         "SEAM",
@@ -625,86 +631,86 @@
         {
           "method": "Native",
           "slug": "native",
-          "video": "single_method_videos/task08_init23_seed27_native.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init23_seed27_native.jpg"
+          "video": "single_method_videos/two-pots-07_native.mp4",
+          "poster": "assets/posters/two-pots-07_native.jpg"
         },
         {
           "method": "SEAM",
           "slug": "seam",
-          "video": "single_method_videos/task08_init23_seed27_seam.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init23_seed27_seam.jpg"
+          "video": "single_method_videos/two-pots-07_seam.mp4",
+          "poster": "assets/posters/two-pots-07_seam.jpg"
         },
         {
           "method": "RTC",
           "slug": "rtc",
-          "video": "single_method_videos/task08_init23_seed27_rtc.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init23_seed27_rtc.jpg"
+          "video": "single_method_videos/two-pots-07_rtc.mp4",
+          "poster": "assets/posters/two-pots-07_rtc.jpg"
         },
         {
           "method": "POTR",
           "slug": "potr",
-          "video": "single_method_videos/task08_init23_seed27_potr.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init23_seed27_potr.jpg"
+          "video": "single_method_videos/two-pots-07_potr.mp4",
+          "poster": "assets/posters/two-pots-07_potr.jpg"
         },
         {
           "method": "BID-Backward",
           "slug": "bid_backward",
-          "video": "single_method_videos/task08_init23_seed27_bid_backward.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init23_seed27_bid_backward.jpg"
+          "video": "single_method_videos/two-pots-07_bid_backward.mp4",
+          "poster": "assets/posters/two-pots-07_bid_backward.jpg"
         },
         {
           "method": "DVAC",
           "slug": "dvac",
-          "video": "single_method_videos/task08_init23_seed27_dvac.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init23_seed27_dvac.jpg"
+          "video": "single_method_videos/two-pots-07_dvac.mp4",
+          "poster": "assets/posters/two-pots-07_dvac.jpg"
         },
         {
           "method": "PACE",
           "slug": "pace",
-          "video": "single_method_videos/task08_init23_seed27_pace.mp4",
           "success": true,
           "recorded_action_steps": 494,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init23_seed27_pace.jpg"
+          "video": "single_method_videos/two-pots-07_pace.mp4",
+          "poster": "assets/posters/two-pots-07_pace.jpg"
         },
         {
           "method": "GRACE",
           "slug": "grace",
-          "video": "single_method_videos/task08_init23_seed27_grace.mp4",
           "success": true,
           "recorded_action_steps": 509,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init23_seed27_grace.jpg"
+          "video": "single_method_videos/two-pots-07_grace.mp4",
+          "poster": "assets/posters/two-pots-07_grace.jpg"
         }
       ],
-      "poster": "assets/posters/task08_init23_seed27_overview.jpg",
-      "thumbnail": "assets/posters/task08_init23_seed27_scene.jpg"
+      "poster": "assets/posters/two-pots-07_overview.jpg",
+      "thumbnail": "assets/posters/two-pots-07_scene.jpg"
     },
     {
-      "case_id": "task06_init23_seed57",
-      "task_id": 6,
-      "init_index": 23,
-      "seed": 57,
+      "case_id": "mug-pudding-02",
+      "task_key": "mug-pudding",
+      "label": "Mug & pudding placement",
+      "category": "Object arrangement",
+      "example_number": 2,
       "description": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
-      "overview_video": "comparison_videos/task06_init23_seed57_all_methods.mp4",
       "showcase_group": "supplemental",
       "advantage": {
         "grace_completion_step": 227,
@@ -725,6 +731,7 @@
         "lead_fraction": -0.060747664,
         "majority_comparators_fail": true
       },
+      "overview_video": "comparison_videos/mug-pudding-02_all_methods.mp4",
       "failed_comparators": [
         "Native",
         "SEAM",
@@ -737,86 +744,86 @@
         {
           "method": "Native",
           "slug": "native",
-          "video": "single_method_videos/task06_init23_seed57_native.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init23_seed57_native.jpg"
+          "video": "single_method_videos/mug-pudding-02_native.mp4",
+          "poster": "assets/posters/mug-pudding-02_native.jpg"
         },
         {
           "method": "SEAM",
           "slug": "seam",
-          "video": "single_method_videos/task06_init23_seed57_seam.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init23_seed57_seam.jpg"
+          "video": "single_method_videos/mug-pudding-02_seam.mp4",
+          "poster": "assets/posters/mug-pudding-02_seam.jpg"
         },
         {
           "method": "RTC",
           "slug": "rtc",
-          "video": "single_method_videos/task06_init23_seed57_rtc.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init23_seed57_rtc.jpg"
+          "video": "single_method_videos/mug-pudding-02_rtc.mp4",
+          "poster": "assets/posters/mug-pudding-02_rtc.jpg"
         },
         {
           "method": "POTR",
           "slug": "potr",
-          "video": "single_method_videos/task06_init23_seed57_potr.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init23_seed57_potr.jpg"
+          "video": "single_method_videos/mug-pudding-02_potr.mp4",
+          "poster": "assets/posters/mug-pudding-02_potr.jpg"
         },
         {
           "method": "BID-Backward",
           "slug": "bid_backward",
-          "video": "single_method_videos/task06_init23_seed57_bid_backward.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init23_seed57_bid_backward.jpg"
+          "video": "single_method_videos/mug-pudding-02_bid_backward.mp4",
+          "poster": "assets/posters/mug-pudding-02_bid_backward.jpg"
         },
         {
           "method": "DVAC",
           "slug": "dvac",
-          "video": "single_method_videos/task06_init23_seed57_dvac.mp4",
           "success": true,
           "recorded_action_steps": 214,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init23_seed57_dvac.jpg"
+          "video": "single_method_videos/mug-pudding-02_dvac.mp4",
+          "poster": "assets/posters/mug-pudding-02_dvac.jpg"
         },
         {
           "method": "PACE",
           "slug": "pace",
-          "video": "single_method_videos/task06_init23_seed57_pace.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init23_seed57_pace.jpg"
+          "video": "single_method_videos/mug-pudding-02_pace.mp4",
+          "poster": "assets/posters/mug-pudding-02_pace.jpg"
         },
         {
           "method": "GRACE",
           "slug": "grace",
-          "video": "single_method_videos/task06_init23_seed57_grace.mp4",
           "success": true,
           "recorded_action_steps": 227,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init23_seed57_grace.jpg"
+          "video": "single_method_videos/mug-pudding-02_grace.mp4",
+          "poster": "assets/posters/mug-pudding-02_grace.jpg"
         }
       ],
-      "poster": "assets/posters/task06_init23_seed57_overview.jpg",
-      "thumbnail": "assets/posters/task06_init23_seed57_scene.jpg"
+      "poster": "assets/posters/mug-pudding-02_overview.jpg",
+      "thumbnail": "assets/posters/mug-pudding-02_scene.jpg"
     },
     {
-      "case_id": "task08_init41_seed47",
-      "task_id": 8,
-      "init_index": 41,
-      "seed": 47,
+      "case_id": "two-pots-08",
+      "task_key": "two-pots",
+      "label": "Two pots on the stove",
+      "category": "Sequential placement",
+      "example_number": 8,
       "description": "put both moka pots on the stove",
-      "overview_video": "comparison_videos/task08_init41_seed47_all_methods.mp4",
       "showcase_group": "supplemental",
       "advantage": {
         "grace_completion_step": 381,
@@ -849,6 +856,7 @@
         "lead_fraction": 0.17173913,
         "majority_comparators_fail": true
       },
+      "overview_video": "comparison_videos/two-pots-08_all_methods.mp4",
       "failed_comparators": [
         "Native",
         "SEAM",
@@ -860,86 +868,86 @@
         {
           "method": "Native",
           "slug": "native",
-          "video": "single_method_videos/task08_init41_seed47_native.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init41_seed47_native.jpg"
+          "video": "single_method_videos/two-pots-08_native.mp4",
+          "poster": "assets/posters/two-pots-08_native.jpg"
         },
         {
           "method": "SEAM",
           "slug": "seam",
-          "video": "single_method_videos/task08_init41_seed47_seam.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init41_seed47_seam.jpg"
+          "video": "single_method_videos/two-pots-08_seam.mp4",
+          "poster": "assets/posters/two-pots-08_seam.jpg"
         },
         {
           "method": "RTC",
           "slug": "rtc",
-          "video": "single_method_videos/task08_init41_seed47_rtc.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init41_seed47_rtc.jpg"
+          "video": "single_method_videos/two-pots-08_rtc.mp4",
+          "poster": "assets/posters/two-pots-08_rtc.jpg"
         },
         {
           "method": "POTR",
           "slug": "potr",
-          "video": "single_method_videos/task08_init41_seed47_potr.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init41_seed47_potr.jpg"
+          "video": "single_method_videos/two-pots-08_potr.mp4",
+          "poster": "assets/posters/two-pots-08_potr.jpg"
         },
         {
           "method": "BID-Backward",
           "slug": "bid_backward",
-          "video": "single_method_videos/task08_init41_seed47_bid_backward.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init41_seed47_bid_backward.jpg"
+          "video": "single_method_videos/two-pots-08_bid_backward.mp4",
+          "poster": "assets/posters/two-pots-08_bid_backward.jpg"
         },
         {
           "method": "DVAC",
           "slug": "dvac",
-          "video": "single_method_videos/task08_init41_seed47_dvac.mp4",
           "success": true,
           "recorded_action_steps": 460,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init41_seed47_dvac.jpg"
+          "video": "single_method_videos/two-pots-08_dvac.mp4",
+          "poster": "assets/posters/two-pots-08_dvac.jpg"
         },
         {
           "method": "PACE",
           "slug": "pace",
-          "video": "single_method_videos/task08_init41_seed47_pace.mp4",
           "success": true,
           "recorded_action_steps": 519,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init41_seed47_pace.jpg"
+          "video": "single_method_videos/two-pots-08_pace.mp4",
+          "poster": "assets/posters/two-pots-08_pace.jpg"
         },
         {
           "method": "GRACE",
           "slug": "grace",
-          "video": "single_method_videos/task08_init41_seed47_grace.mp4",
           "success": true,
           "recorded_action_steps": 381,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init41_seed47_grace.jpg"
+          "video": "single_method_videos/two-pots-08_grace.mp4",
+          "poster": "assets/posters/two-pots-08_grace.jpg"
         }
       ],
-      "poster": "assets/posters/task08_init41_seed47_overview.jpg",
-      "thumbnail": "assets/posters/task08_init41_seed47_scene.jpg"
+      "poster": "assets/posters/two-pots-08_overview.jpg",
+      "thumbnail": "assets/posters/two-pots-08_scene.jpg"
     },
     {
-      "case_id": "task06_init38_seed17",
-      "task_id": 6,
-      "init_index": 38,
-      "seed": 17,
+      "case_id": "mug-pudding-03",
+      "task_key": "mug-pudding",
+      "label": "Mug & pudding placement",
+      "category": "Object arrangement",
+      "example_number": 3,
       "description": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
-      "overview_video": "comparison_videos/task06_init38_seed17_all_methods.mp4",
       "showcase_group": "supplemental",
       "advantage": {
         "grace_completion_step": 222,
@@ -972,6 +980,7 @@
         "lead_fraction": 0.017699115,
         "majority_comparators_fail": true
       },
+      "overview_video": "comparison_videos/mug-pudding-03_all_methods.mp4",
       "failed_comparators": [
         "RTC",
         "POTR",
@@ -983,86 +992,86 @@
         {
           "method": "Native",
           "slug": "native",
-          "video": "single_method_videos/task06_init38_seed17_native.mp4",
           "success": true,
           "recorded_action_steps": 226,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init38_seed17_native.jpg"
+          "video": "single_method_videos/mug-pudding-03_native.mp4",
+          "poster": "assets/posters/mug-pudding-03_native.jpg"
         },
         {
           "method": "SEAM",
           "slug": "seam",
-          "video": "single_method_videos/task06_init38_seed17_seam.mp4",
           "success": true,
           "recorded_action_steps": 250,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init38_seed17_seam.jpg"
+          "video": "single_method_videos/mug-pudding-03_seam.mp4",
+          "poster": "assets/posters/mug-pudding-03_seam.jpg"
         },
         {
           "method": "RTC",
           "slug": "rtc",
-          "video": "single_method_videos/task06_init38_seed17_rtc.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init38_seed17_rtc.jpg"
+          "video": "single_method_videos/mug-pudding-03_rtc.mp4",
+          "poster": "assets/posters/mug-pudding-03_rtc.jpg"
         },
         {
           "method": "POTR",
           "slug": "potr",
-          "video": "single_method_videos/task06_init38_seed17_potr.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init38_seed17_potr.jpg"
+          "video": "single_method_videos/mug-pudding-03_potr.mp4",
+          "poster": "assets/posters/mug-pudding-03_potr.jpg"
         },
         {
           "method": "BID-Backward",
           "slug": "bid_backward",
-          "video": "single_method_videos/task06_init38_seed17_bid_backward.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init38_seed17_bid_backward.jpg"
+          "video": "single_method_videos/mug-pudding-03_bid_backward.mp4",
+          "poster": "assets/posters/mug-pudding-03_bid_backward.jpg"
         },
         {
           "method": "DVAC",
           "slug": "dvac",
-          "video": "single_method_videos/task06_init38_seed17_dvac.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init38_seed17_dvac.jpg"
+          "video": "single_method_videos/mug-pudding-03_dvac.mp4",
+          "poster": "assets/posters/mug-pudding-03_dvac.jpg"
         },
         {
           "method": "PACE",
           "slug": "pace",
-          "video": "single_method_videos/task06_init38_seed17_pace.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init38_seed17_pace.jpg"
+          "video": "single_method_videos/mug-pudding-03_pace.mp4",
+          "poster": "assets/posters/mug-pudding-03_pace.jpg"
         },
         {
           "method": "GRACE",
           "slug": "grace",
-          "video": "single_method_videos/task06_init38_seed17_grace.mp4",
           "success": true,
           "recorded_action_steps": 222,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init38_seed17_grace.jpg"
+          "video": "single_method_videos/mug-pudding-03_grace.mp4",
+          "poster": "assets/posters/mug-pudding-03_grace.jpg"
         }
       ],
-      "poster": "assets/posters/task06_init38_seed17_overview.jpg",
-      "thumbnail": "assets/posters/task06_init38_seed17_scene.jpg"
+      "poster": "assets/posters/mug-pudding-03_overview.jpg",
+      "thumbnail": "assets/posters/mug-pudding-03_scene.jpg"
     },
     {
-      "case_id": "task08_init30_seed27",
-      "task_id": 8,
-      "init_index": 30,
-      "seed": 27,
+      "case_id": "two-pots-09",
+      "task_key": "two-pots",
+      "label": "Two pots on the stove",
+      "category": "Sequential placement",
+      "example_number": 9,
       "description": "put both moka pots on the stove",
-      "overview_video": "comparison_videos/task08_init30_seed27_all_methods.mp4",
       "showcase_group": "supplemental",
       "advantage": {
         "grace_completion_step": 407,
@@ -1095,6 +1104,7 @@
         "lead_fraction": 0.012135922,
         "majority_comparators_fail": true
       },
+      "overview_video": "comparison_videos/two-pots-09_all_methods.mp4",
       "failed_comparators": [
         "Native",
         "SEAM",
@@ -1106,78 +1116,78 @@
         {
           "method": "Native",
           "slug": "native",
-          "video": "single_method_videos/task08_init30_seed27_native.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init30_seed27_native.jpg"
+          "video": "single_method_videos/two-pots-09_native.mp4",
+          "poster": "assets/posters/two-pots-09_native.jpg"
         },
         {
           "method": "SEAM",
           "slug": "seam",
-          "video": "single_method_videos/task08_init30_seed27_seam.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init30_seed27_seam.jpg"
+          "video": "single_method_videos/two-pots-09_seam.mp4",
+          "poster": "assets/posters/two-pots-09_seam.jpg"
         },
         {
           "method": "RTC",
           "slug": "rtc",
-          "video": "single_method_videos/task08_init30_seed27_rtc.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init30_seed27_rtc.jpg"
+          "video": "single_method_videos/two-pots-09_rtc.mp4",
+          "poster": "assets/posters/two-pots-09_rtc.jpg"
         },
         {
           "method": "POTR",
           "slug": "potr",
-          "video": "single_method_videos/task08_init30_seed27_potr.mp4",
           "success": true,
           "recorded_action_steps": 443,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init30_seed27_potr.jpg"
+          "video": "single_method_videos/two-pots-09_potr.mp4",
+          "poster": "assets/posters/two-pots-09_potr.jpg"
         },
         {
           "method": "BID-Backward",
           "slug": "bid_backward",
-          "video": "single_method_videos/task08_init30_seed27_bid_backward.mp4",
           "success": true,
           "recorded_action_steps": 412,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init30_seed27_bid_backward.jpg"
+          "video": "single_method_videos/two-pots-09_bid_backward.mp4",
+          "poster": "assets/posters/two-pots-09_bid_backward.jpg"
         },
         {
           "method": "DVAC",
           "slug": "dvac",
-          "video": "single_method_videos/task08_init30_seed27_dvac.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init30_seed27_dvac.jpg"
+          "video": "single_method_videos/two-pots-09_dvac.mp4",
+          "poster": "assets/posters/two-pots-09_dvac.jpg"
         },
         {
           "method": "PACE",
           "slug": "pace",
-          "video": "single_method_videos/task08_init30_seed27_pace.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init30_seed27_pace.jpg"
+          "video": "single_method_videos/two-pots-09_pace.mp4",
+          "poster": "assets/posters/two-pots-09_pace.jpg"
         },
         {
           "method": "GRACE",
           "slug": "grace",
-          "video": "single_method_videos/task08_init30_seed27_grace.mp4",
           "success": true,
           "recorded_action_steps": 407,
           "rendered_frames": 521,
-          "poster": "assets/posters/task08_init30_seed27_grace.jpg"
+          "video": "single_method_videos/two-pots-09_grace.mp4",
+          "poster": "assets/posters/two-pots-09_grace.jpg"
         }
       ],
-      "poster": "assets/posters/task08_init30_seed27_overview.jpg",
-      "thumbnail": "assets/posters/task08_init30_seed27_scene.jpg"
+      "poster": "assets/posters/two-pots-09_overview.jpg",
+      "thumbnail": "assets/posters/two-pots-09_scene.jpg"
     }
   ]
 }

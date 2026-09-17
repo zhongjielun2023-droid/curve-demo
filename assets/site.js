@@ -8,35 +8,8 @@
       "The episode catalog could not be loaded. Open MAIN_SHOWCASE.md to browse the videos.";
     return;
   }
-  const labels = [
-    "Soup & sauce into basket",
-    "Cheese & butter into basket",
-    "Moka pot on the stove",
-    "Bowl into drawer",
-    "Two mugs onto plates",
-    "Book into the caddy",
-    "Mug & pudding placement",
-    "Soup & cheese into basket",
-    "Two pots on the stove",
-    "Mug into microwave",
-  ];
   const byId = new Map(data.cases.map((episode) => [episode.case_id, episode]));
-  const categories = [
-    "Sequential placement",
-    "Sequential placement",
-    "Stove interaction",
-    "Open, place, close",
-    "Object arrangement",
-    "Pick and place",
-    "Object arrangement",
-    "Sequential placement",
-    "Sequential placement",
-    "Open, place, close",
-  ];
-  const exampleNumber = (episode) =>
-    data.cases
-      .filter((entry) => entry.task_id === episode.task_id)
-      .findIndex((entry) => entry.case_id === episode.case_id) + 1;
+  const exampleNumber = (episode) => episode.example_number;
   const fps = data.fps;
   const totalSteps = data.cases[0].methods[0].rendered_frames - 1;
   const video = $("comparison-video");
@@ -63,7 +36,7 @@
     );
   const title = (value) => value.charAt(0).toUpperCase() + value.slice(1);
   const code = (episode) =>
-    `${categories[episode.task_id]} · Example ${exampleNumber(episode)} · Seed ${episode.seed}`;
+    `${episode.category} · Example ${exampleNumber(episode)}`;
   const list = (values) =>
     values.length < 2
       ? values.join("")
@@ -103,7 +76,7 @@
     return data.cases.filter(
       (episode) =>
         episode.showcase_group === state.group &&
-        (state.task === "all" || episode.task_id === Number(state.task)),
+        (state.task === "all" || episode.task_key === state.task),
     );
   }
 
@@ -120,8 +93,8 @@
     ).length;
     $("collection-description").textContent =
       state.group === "main"
-        ? "Ten tasks, ordered by majority-failure examples and earliest completion."
-        : `${collectionSize} further examples where GRACE succeeds and most comparison methods fail.`;
+        ? "Ten tasks. Follow the movement from the first reach to the final placement."
+        : `${collectionSize} more demonstrations of GRACE in action.`;
     $("case-grid").replaceChildren();
     const cases = visibleCases();
     if (!cases.length) {
@@ -144,9 +117,9 @@
       );
       button.setAttribute(
         "aria-label",
-        `${labels[episode.task_id]}. Example ${exampleNumber(episode)}. ${badge}`,
+        `${episode.label}. Example ${exampleNumber(episode)}. ${badge}`,
       );
-      button.innerHTML = `<span class="case-card-image"><img src="${escape(episode.thumbnail)}" alt="" width="512" height="512" loading="lazy"><span class="card-play" aria-hidden="true">▶</span></span><span class="case-card-body"><span class="case-card-title">${escape(labels[episode.task_id])}</span><span class="case-card-outcome">${badge}</span>${state.group === "supplemental" ? `<span class="case-card-meta">Example ${exampleNumber(episode)}</span>` : ""}</span>`;
+      button.innerHTML = `<span class="case-card-image"><img src="${escape(episode.thumbnail)}" alt="" width="512" height="512" loading="lazy"><span class="card-play" aria-hidden="true">▶</span></span><span class="case-card-body"><span class="case-card-title">${escape(episode.label)}</span><span class="case-card-outcome">${badge}</span>${state.group === "supplemental" ? `<span class="case-card-meta">Example ${exampleNumber(episode)}</span>` : ""}</span>`;
       button.addEventListener("click", () => {
         state.episode = episode;
         renderComparison();
@@ -441,8 +414,8 @@
         `<figure><img src="${escape(frame.image)}" alt="${["Initial scene", "GRACE executing the task", "Task completed by GRACE"][index]}" width="512" height="512"><figcaption>${["START", "IN MOTION", "COMPLETE"][index]}</figcaption></figure>`,
     )
     .join("");
-  labels.forEach((label, index) => {
-    const option = new Option(label, index);
+  data.tasks.forEach(({label, key}) => {
+    const option = new Option(label, key);
     $("task-filter").add(option);
   });
   for (const group of ["main", "supplemental"]) {
@@ -453,7 +426,7 @@
       .forEach((episode) => {
         optionGroup.append(
           new Option(
-            `${labels[episode.task_id]} · Example ${exampleNumber(episode)}`,
+            `${episode.label} · Example ${exampleNumber(episode)}`,
             episode.case_id,
           ),
         );
