@@ -63,7 +63,7 @@
     );
   const title = (value) => value.charAt(0).toUpperCase() + value.slice(1);
   const code = (episode) =>
-    `${categories[episode.task_id]} · Example ${exampleNumber(episode)}`;
+    `${categories[episode.task_id]} · Example ${exampleNumber(episode)} · Seed ${episode.seed}`;
   const list = (values) =>
     values.length < 2
       ? values.join("")
@@ -120,8 +120,8 @@
     ).length;
     $("collection-description").textContent =
       state.group === "main"
-        ? "Explore ten different tasks."
-        : `${collectionSize} more examples, with new starting scenes for familiar tasks.`;
+        ? "Ten tasks, ordered by majority-failure examples and earliest completion."
+        : `${collectionSize} further examples where GRACE succeeds and most comparison methods fail.`;
     $("case-grid").replaceChildren();
     const cases = visibleCases();
     if (!cases.length) {
@@ -134,7 +134,7 @@
     cases.forEach((episode) => {
       const button = document.createElement("button");
       const failures = episode.advantage.failed_comparators.length;
-      const badge = failures ? "Successful completion" : "Earlier completion";
+      const badge = failures >= 4 ? `GRACE succeeds · ${failures}/7 others fail` : "GRACE finishes first";
       button.type = "button";
       button.className = "case-card";
       button.dataset.case = episode.case_id;
@@ -247,7 +247,9 @@
         `<strong>GRACE completes the task</strong> where ${others} ${count === 1 ? "does" : "do"} not.`,
       );
     }
-    if (advantage.faster_than.length) {
+    if (advantage.strictly_earliest_successful_completion) {
+      parts.push(`<strong>GRACE finishes first</strong>, ${advantage.lead_steps} execution steps ahead of the earliest successful comparator.`);
+    } else if (advantage.faster_than.length) {
       const count = advantage.faster_than.length;
       parts.push(
         `${advantage.failed_comparators.length ? "It also finishes" : "GRACE finishes"} earlier than <strong>${count} other successful ${count === 1 ? "method" : "methods"}</strong>.`,

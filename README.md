@@ -22,8 +22,11 @@ all ten LIBERO-10 tasks, and ten additional initializations in the
 comparison and eight individual players: Native, SEAM, RTC, POTR, BID-Backward,
 DVAC, PACE, and GRACE. Links preserve the selected case and method.
 
-Each comparison uses the same task, initial-state index and seed (7). These selected
-qualitative examples show successful and earlier completion; aggregate performance is
+Each comparison uses the same task, initial-state index and seed. Selection spans the seven registered seeds (7, 17, 27, 47, 57, 77, 97).
+First priority is GRACE success with at least four of seven comparators unsuccessful;
+second priority is GRACE completing strictly before every other successful method.
+The main collection covers ten tasks, with ten further majority-failure examples.
+Each scene is used only once, and each case records its seed. Aggregate performance is
 reported separately in the paper. Completion steps measure recorded execution progress.
 Policy inference time is excluded from the playback timeline.
 
