@@ -7,9 +7,9 @@
     <meta name="theme-color" content="#f6f5f0" />
     <meta
       name="description"
-      content="CURVE: Curvature-Guided Replanning for Action Chunks. Explore synchronized eight-method demonstrations on OpenPI pi0.5 and LIBERO-10."
+      content="GRACE: Geometric Replanning with Adaptive Chunk Execution. Explore synchronized eight-method demonstrations on OpenPI pi0.5 and LIBERO-10."
     />
-    <title>CURVE — Replanning in motion</title>
+    <title>Between Glances — GRACE</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/site.css" />
     <script defer src="assets/data.js"></script>
@@ -19,10 +19,10 @@
     <a class="skip-link" href="#comparisons">Skip to demonstrations</a>
     <header class="site-header">
       <div class="header-inner">
-        <a class="wordmark" href="#top" aria-label="CURVE home"
+        <a class="wordmark" href="#top" aria-label="GRACE home"
           ><svg viewBox="0 0 32 32" aria-hidden="true">
             <path d="M26 7C7-2 0 20 13 25c8 4 16-3 13-9-3-7-13-4-12 2" /></svg
-          >CURVE<span class="wordmark-dot">.</span></a
+          >GRACE<span class="wordmark-dot">.</span></a
         >
         <nav aria-label="Main navigation">
           <a href="#highlights">Demonstrations</a>
@@ -40,44 +40,46 @@
             LIBERO-10
           </p>
           <h1 id="hero-title">
-            When the future<br />becomes <em>history.</em>
+            Between glances,<br />motion <em>continues.</em>
           </h1>
           <p class="paper-subtitle">
-            Curvature-Guided Replanning for Action Chunks
+            Between Glances: Geometric Memory for Adaptive Action Chunking
           </p>
           <p class="hero-description">
-            CURVE uses the geometry of past action generation to shape the next
-            action chunk, guided by the robot’s latest observation.
+            A robot reaches, grasps, and carries on between observations.
+            GRACE uses geometric memory from the preceding generation to guide
+            that continuation, while the stability of the current prediction
+            determines how far to act before looking again.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#highlights"
-              >Watch CURVE in action <span aria-hidden="true">↗</span></a
+              >Watch GRACE in action <span aria-hidden="true">↗</span></a
             >
             <a class="text-link" href="#comparisons"
               >Compare methods <span aria-hidden="true">→</span></a
             >
           </div>
           <div class="research-tags" aria-label="Method properties">
-            <span>History as geometry</span><span>Training-free</span
-            ><span>Closed-loop replanning</span>
+            <span>Geometric memory</span><span>Adaptive execution</span
+            ><span>Training-free</span>
           </div>
         </div>
         <figure class="hero-figure">
           <div class="figure-topline">
-            <span>HISTORY → ACTION</span
-            ><span class="live-label">CURVE in action</span>
+            <span>OBSERVE → CONTINUE → OBSERVE</span
+            ><span class="live-label">GRACE in action</span>
           </div>
           <div class="hero-main-image">
             <img
               id="hero-image"
-              src="assets/posters/hero_step447.jpg"
+              src="assets/posters/hero_step451.jpg"
               width="512"
               height="512"
-              alt="CURVE places both moka pots on the stove."
+              alt="GRACE places both moka pots on the stove."
               fetchpriority="high"
             />
             <span class="image-label"
-              ><span class="status-dot" aria-hidden="true"></span> CURVE
+              ><span class="status-dot" aria-hidden="true"></span> GRACE
               <span class="label-divider">/</span> Task complete</span
             >
           </div>
@@ -97,7 +99,7 @@
       >
         <div class="section-heading">
           <div>
-            <p class="eyebrow">CURVE IN ACTION</p>
+            <p class="eyebrow">GRACE IN ACTION</p>
             <h2 id="highlights-title">See the task through.</h2>
           </div>
           <p>
@@ -120,8 +122,8 @@
               <h2 id="comparison-title">One scene. Eight approaches.</h2>
             </div>
             <p>
-              Selected examples of successful and earlier completion.<br />The
-              same task, shown across all eight methods.
+              Selected examples of successful and earlier completion.<br />
+              Each comparison shares the task, initial state, and seed.
             </p>
           </div>
           <div class="collection-toolbar">
@@ -173,7 +175,7 @@
                 playsinline
                 preload="none"
                 aria-label="Synchronized comparison of all eight methods"
-                poster="assets/posters/task08_init02_overview.jpg"
+                poster="assets/posters/task08_init21_overview.jpg"
               ></video>
               <button class="play-overlay" id="play-comparison" type="button">
                 <span class="play-icon" aria-hidden="true">▶</span
@@ -184,7 +186,7 @@
               Video could not be loaded.
               <a
                 id="comparison-error-link"
-                href="comparison_videos/task08_init02_all_methods.mp4"
+                href="comparison_videos/task08_init21_all_methods.mp4"
                 >Open the video</a
               >.
             </p>
@@ -199,12 +201,12 @@
                   class="small-button accent"
                   id="jump-completion"
                 >
-                  See CURVE finish <span aria-hidden="true">→</span>
+                  See GRACE finish <span aria-hidden="true">→</span>
                 </button>
                 <a
                   class="small-button"
                   id="download-comparison"
-                  href="comparison_videos/task08_init02_all_methods.mp4"
+                  href="comparison_videos/task08_init21_all_methods.mp4"
                   download
                   >Download video <span aria-hidden="true">↓</span></a
                 >
@@ -215,8 +217,8 @@
               <p id="advantage-summary"></p>
             </div>
             <div class="comparison-secondary-actions">
-              <button type="button" class="text-link" id="watch-curve-alone">
-                Watch CURVE on its own <span aria-hidden="true">↗</span>
+              <button type="button" class="text-link" id="watch-grace-alone">
+                Watch GRACE on its own <span aria-hidden="true">↗</span>
               </button>
             </div>
             <details id="comparison-results" class="result-disclosure">
@@ -308,7 +310,7 @@
           </div>
           <div class="single-player-card">
             <div class="single-player-heading">
-              <strong id="single-method-name">CURVE</strong
+              <strong id="single-method-name">GRACE</strong
               ><span>FULL TASK VIDEO</span>
             </div>
             <div class="single-player-wrap">
@@ -341,11 +343,11 @@
           <div class="section-heading">
             <div>
               <p class="eyebrow">THE IDEA</p>
-              <h2 id="method-title">History becomes geometry.</h2>
+              <h2 id="method-title">One observation leads to the next.</h2>
             </div>
             <p>
-              The past shapes how a chunk is generated.<br />The present
-              determines what is generated.
+              The preceding generation guides the next motion.<br />
+              Stability in the current generation sets when the robot looks again.
             </p>
           </div>
           <div class="method-grid">
@@ -370,10 +372,11 @@
                   class="idea-tick"
                 />
               </svg>
-              <h3>Read the shape of the past.</h3>
+              <h3>Carry the intended motion.</h3>
               <p>
-                Completed action generations carry directional structure. CURVE
-                distills their bending into a geometric memory.
+                At a new observation, the unexecuted part of the preceding
+                plan supplies a continuation. Geometry from that same generation
+                guides its direction as the robot forms a fresh action chunk.
               </p>
             </article>
             <article>
@@ -382,21 +385,19 @@
                 viewBox="0 0 280 110"
                 aria-hidden="true"
               >
-                <g transform="translate(139 56) rotate(-23)">
-                  <ellipse rx="92" ry="37" class="idea-ellipse" />
-                  <ellipse rx="63" ry="25" class="idea-ellipse" />
-                  <ellipse rx="31" ry="13" class="idea-ellipse" />
-                </g>
-                <path
-                  d="M36 93C83 98 107 42 149 53S202 44 250 16"
-                  class="idea-path"
-                />
-                <circle cx="149" cy="53" r="5" />
+                <path d="M20 82C70 80 92 55 130 52S209 20 260 16" class="idea-path faint" />
+                <path d="M20 82C70 80 92 54 130 52S205 57 260 65" class="idea-path faint" />
+                <path d="M20 82C70 80 92 54 130 52S211 38 260 40" class="idea-path faint" />
+                <path d="M20 82C70 80 92 54 130 52" class="idea-path" />
+                <circle cx="20" cy="82" r="5" />
+                <circle cx="130" cy="52" r="7" />
+                <path d="M145 26V79" class="idea-tick" />
               </svg>
-              <h3>Shape the next generation.</h3>
+              <h3>Let stability set the reach.</h3>
               <p>
-                This memory shapes the next action chunk while the current
-                observation guides what the robot should do.
+                As that chunk takes shape, GRACE reads how consistently its
+                actions are predicted. The stable prefix determines how far the
+                robot proceeds before observing again.
               </p>
             </article>
             <article>
@@ -416,16 +417,17 @@
                 <path d="M155 65L155 75L165 73" class="idea-tick" />
                 <path d="M115 56C159 78 188 93 248 62" class="idea-path" />
               </svg>
-              <h3>Act, observe, replan.</h3>
+              <h3>Leave the next continuation.</h3>
               <p>
-                Execute part of the chunk, observe the scene again, and repeat.
-                Each new generation responds to the latest feedback.
+                The completed generation provides the next geometric memory.
+                Actual execution advances the remaining plan, so the next
+                observation begins with a continuation shaped by this motion.
               </p>
             </article>
           </div>
           <p class="method-note">
-            A training-free approach to action-chunk replanning, demonstrated
-            with OpenPI π₀.₅ on LIBERO-10.
+            GRACE — Geometric Replanning with Adaptive Chunk Execution.<br />
+            A continuous control loop, demonstrated with OpenPI π₀.₅ on LIBERO-10.
           </p>
         </div>
       </section>
@@ -433,9 +435,9 @@
     <footer class="container site-footer">
       <div>
         <a class="wordmark" href="#top"
-          >CURVE<span class="wordmark-dot">.</span></a
+          >GRACE<span class="wordmark-dot">.</span></a
         >
-        <p>Curvature-Guided Replanning for Action Chunks</p>
+        <p>Geometric Replanning with Adaptive Chunk Execution</p>
       </div>
       <span>Anonymous research demonstration</span
       ><a class="text-link" href="#top"

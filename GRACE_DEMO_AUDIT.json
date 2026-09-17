@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "method": "GRACE",
+  "geometry": "previous_only",
+  "scheduler": "variance",
+  "source_identity": "efd11e3db9016a8974950b3024af2f9fea1db6033fc0ab0100fa40875a256e29",
+  "seed": 7,
+  "case_count": 20,
+  "main_case_count": 10,
+  "supplemental_case_count": 10,
+  "full_video_count": 180,
+  "presentation_clip_count": 3,
+  "poster_count": 203,
+  "registered_sources_verified": 160,
+  "grace_actual_execution_verified": 20,
+  "newly_rendered_methods": 55,
+  "reused_verified_comparators": 105,
+  "max_boundary_error_m": 6.062681995909399e-08,
+  "catalogue_and_playlists_match": true,
+  "all_videos_fully_decoded": true
+}

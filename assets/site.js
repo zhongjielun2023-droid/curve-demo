@@ -1,7 +1,7 @@
 /* All outcomes and video paths come from the audited, local episode catalog. */
 (() => {
   "use strict";
-  const data = window.CURVE_DEMO;
+  const data = window.GRACE_DEMO;
   const $ = (id) => document.getElementById(id);
   if (!data || !Array.isArray(data.cases) || !data.cases.length) {
     $("collection-description").textContent =
@@ -46,7 +46,7 @@
     task: "all",
     episode: null,
     single: null,
-    method: "CURVE",
+    method: "GRACE",
   };
   let cancelSeek = () => {};
   const escape = (value) =>
@@ -81,7 +81,7 @@
     state.single = byId.get(params.get("single")) || state.episode;
     state.method = data.methods.includes(params.get("method"))
       ? params.get("method")
-      : "CURVE";
+      : "GRACE";
     state.task = "all";
   }
 
@@ -230,7 +230,7 @@
     $("current-step").textContent = "000";
     $("download-comparison").href = episode.overview_video;
     $("comparison-error-link").href = episode.overview_video;
-    $("jump-completion").title = "See the scene when CURVE completes the task";
+    $("jump-completion").title = "See the scene when GRACE completes the task";
     video.setAttribute(
       "aria-label",
       `Eight-method comparison: ${episode.description}, example ${exampleNumber(episode)}`,
@@ -244,13 +244,13 @@
           ? "all seven other methods"
           : `${count} comparison ${count === 1 ? "method" : "methods"}`;
       parts.push(
-        `<strong>CURVE completes the task</strong> where ${others} ${count === 1 ? "does" : "do"} not.`,
+        `<strong>GRACE completes the task</strong> where ${others} ${count === 1 ? "does" : "do"} not.`,
       );
     }
     if (advantage.faster_than.length) {
       const count = advantage.faster_than.length;
       parts.push(
-        `${advantage.failed_comparators.length ? "It also finishes" : "CURVE finishes"} earlier than <strong>${count} other successful ${count === 1 ? "method" : "methods"}</strong>.`,
+        `${advantage.failed_comparators.length ? "It also finishes" : "GRACE finishes"} earlier than <strong>${count} other successful ${count === 1 ? "method" : "methods"}</strong>.`,
       );
     }
     if (
@@ -265,7 +265,7 @@
     $("result-rows").innerHTML = episode.methods
       .map((method) => {
         const steps = method.success ? method.recorded_action_steps : "—";
-        const ours = method.method === "CURVE";
+        const ours = method.method === "GRACE";
         const width = method.success
           ? (100 * method.recorded_action_steps) / totalSteps
           : 0;
@@ -391,7 +391,7 @@
       const article = document.createElement("article");
       article.className = "highlight-card";
       article.dataset.highlight = item.case_id;
-      article.innerHTML = `<div class="highlight-player"><video playsinline preload="none" poster="${escape(item.poster)}" aria-label="CURVE: ${escape(item.description)}"></video><button type="button" class="play-overlay highlight-play"><span class="play-icon" aria-hidden="true">▶</span><span>Watch CURVE</span></button></div><p class="highlight-error media-error" role="alert" hidden>Video could not be loaded. <a href="${escape(item.video)}">Open the video</a>.</p><div class="highlight-copy"><h3>${escape(item.title)}</h3><p>${escape(item.description)}</p><button type="button" class="text-link highlight-compare">Compare this task <span aria-hidden="true">↗</span></button></div>`;
+      article.innerHTML = `<div class="highlight-player"><video playsinline preload="none" poster="${escape(item.poster)}" aria-label="GRACE: ${escape(item.description)}"></video><button type="button" class="play-overlay highlight-play"><span class="play-icon" aria-hidden="true">▶</span><span>Watch GRACE</span></button></div><p class="highlight-error media-error" role="alert" hidden>Video could not be loaded. <a href="${escape(item.video)}">Open the video</a>.</p><div class="highlight-copy"><h3>${escape(item.title)}</h3><p>${escape(item.description)}</p><button type="button" class="text-link highlight-compare">Compare this task <span aria-hidden="true">↗</span></button></div>`;
       const clip = article.querySelector("video");
       clip.dataset.source = item.video;
       article
@@ -436,7 +436,7 @@
   $("hero-filmstrip").innerHTML = data.hero.frames
     .map(
       (frame, index) =>
-        `<figure><img src="${escape(frame.image)}" alt="${["Initial scene", "CURVE executing the task", "Task completed by CURVE"][index]}" width="512" height="512"><figcaption>${["START", "IN MOTION", "COMPLETE"][index]}</figcaption></figure>`,
+        `<figure><img src="${escape(frame.image)}" alt="${["Initial scene", "GRACE executing the task", "Task completed by GRACE"][index]}" width="512" height="512"><figcaption>${["START", "IN MOTION", "COMPLETE"][index]}</figcaption></figure>`,
     )
     .join("");
   labels.forEach((label, index) => {
@@ -494,9 +494,9 @@
     renderSingle();
     saveLocation();
   });
-  $("watch-curve-alone").addEventListener("click", () => {
+  $("watch-grace-alone").addEventListener("click", () => {
     state.single = state.episode;
-    state.method = "CURVE";
+    state.method = "GRACE";
     renderSingle();
     saveLocation();
     $("single-method").scrollIntoView({
@@ -506,7 +506,7 @@
     $("single-case").focus({ preventScroll: true });
   });
   $("jump-completion").addEventListener("click", () =>
-    seekComparison(state.episode.advantage.curve_completion_step),
+    seekComparison(state.episode.advantage.grace_completion_step),
   );
   $("restart-video").addEventListener("click", () => seekComparison(0));
   $("play-comparison").addEventListener("click", () => playMedia(video));
