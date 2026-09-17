@@ -1,6 +1,6 @@
 # GRACE Supplemental Showcase
 
-Selected qualitative examples from seven registered seeds, with the same seed, task and initial state for all eight methods in each comparison. GRACE success is required. First priority: at least four of the seven comparators fail, ranked by failure count. Second priority: GRACE finishes strictly before every other successful method, ranked by relative step advantage over the earliest successful comparator. Ties are identified separately. The main showcase retains one case per task; ten supplemental cases show additional distinct initial scenes. Aggregate performance is reported separately in the paper.
+Selected qualitative examples from seven registered seeds, with the same seed, task and initial state for all eight methods in each comparison. GRACE success is required. First priority: at least four of the seven comparators fail, ranked by failure count. Second priority: GRACE finishes strictly before every other successful method, ranked by relative step advantage over the earliest successful comparator. Ties are identified separately. The main showcase retains one case per task; ten supplemental cases show additional distinct initial scenes. Featured examples also undergo visual review for clear task completion. Aggregate performance is reported separately in the paper.
 
 ## task08_init29_seed47 — Put both moka pots on the stove
 

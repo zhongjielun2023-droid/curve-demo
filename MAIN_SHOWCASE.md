@@ -1,6 +1,6 @@
 # GRACE Main Showcase
 
-Selected qualitative examples from seven registered seeds, with the same seed, task and initial state for all eight methods in each comparison. GRACE success is required. First priority: at least four of the seven comparators fail, ranked by failure count. Second priority: GRACE finishes strictly before every other successful method, ranked by relative step advantage over the earliest successful comparator. Ties are identified separately. The main showcase retains one case per task; ten supplemental cases show additional distinct initial scenes. Aggregate performance is reported separately in the paper.
+Selected qualitative examples from seven registered seeds, with the same seed, task and initial state for all eight methods in each comparison. GRACE success is required. First priority: at least four of the seven comparators fail, ranked by failure count. Second priority: GRACE finishes strictly before every other successful method, ranked by relative step advantage over the earliest successful comparator. Ties are identified separately. The main showcase retains one case per task; ten supplemental cases show additional distinct initial scenes. Featured examples also undergo visual review for clear task completion. Aggregate performance is reported separately in the paper.
 
 ## task08_init21 — Put both moka pots on the stove
 
@@ -19,22 +19,22 @@ Matched seed: 7; task: 8; initial state: 21.
 | PACE | Unsuccessful | — | [Watch](single_method_videos/task08_init21_pace.mp4) |
 | GRACE | Success | 451 | [Watch](single_method_videos/task08_init21_grace.mp4) |
 
-## task06_init33_seed27 — Put the white mug on the plate and put the chocolate pudding to the right of the plate
+## task06_init27 — Put the white mug on the plate and put the chocolate pudding to the right of the plate
 
-Matched seed: 27; task: 6; initial state: 33.
+Matched seed: 7; task: 6; initial state: 27.
 
-[Watch the synchronized comparison](comparison_videos/task06_init33_seed27_all_methods.mp4)
+[Watch the synchronized comparison](comparison_videos/task06_init27_all_methods.mp4)
 
 | Method | Outcome | Steps to first success | Video |
 | --- | --- | ---: | --- |
-| Native | Unsuccessful | — | [Watch](single_method_videos/task06_init33_seed27_native.mp4) |
-| SEAM | Unsuccessful | — | [Watch](single_method_videos/task06_init33_seed27_seam.mp4) |
-| RTC | Unsuccessful | — | [Watch](single_method_videos/task06_init33_seed27_rtc.mp4) |
-| POTR | Unsuccessful | — | [Watch](single_method_videos/task06_init33_seed27_potr.mp4) |
-| BID-Backward | Success | 453 | [Watch](single_method_videos/task06_init33_seed27_bid_backward.mp4) |
-| DVAC | Unsuccessful | — | [Watch](single_method_videos/task06_init33_seed27_dvac.mp4) |
-| PACE | Unsuccessful | — | [Watch](single_method_videos/task06_init33_seed27_pace.mp4) |
-| GRACE | Success | 241 | [Watch](single_method_videos/task06_init33_seed27_grace.mp4) |
+| Native | Unsuccessful | — | [Watch](single_method_videos/task06_init27_native.mp4) |
+| SEAM | Success | 351 | [Watch](single_method_videos/task06_init27_seam.mp4) |
+| RTC | Unsuccessful | — | [Watch](single_method_videos/task06_init27_rtc.mp4) |
+| POTR | Unsuccessful | — | [Watch](single_method_videos/task06_init27_potr.mp4) |
+| BID-Backward | Success | 267 | [Watch](single_method_videos/task06_init27_bid_backward.mp4) |
+| DVAC | Success | 358 | [Watch](single_method_videos/task06_init27_dvac.mp4) |
+| PACE | Unsuccessful | — | [Watch](single_method_videos/task06_init27_pace.mp4) |
+| GRACE | Success | 241 | [Watch](single_method_videos/task06_init27_grace.mp4) |
 
 ## task00_init18 — Put both the alphabet soup and the tomato sauce in the basket
 

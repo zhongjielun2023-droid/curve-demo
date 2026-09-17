@@ -29,6 +29,7 @@ The main collection covers ten tasks, with ten further majority-failure examples
 Each scene is used only once, and each case records its seed. Aggregate performance is
 reported separately in the paper. Completion steps measure recorded execution progress.
 Policy inference time is excluded from the playback timeline.
+Featured examples also undergo visual review for clear task completion.
 
 ## Video and data protocol
 

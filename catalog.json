@@ -31,7 +31,7 @@
   "comparison_directory": "comparison_videos",
   "video_count": 180,
   "presentation_clip_count": 3,
-  "selection_rule": "Selected qualitative examples from seven registered seeds, with the same seed, task and initial state for all eight methods in each comparison. GRACE success is required. First priority: at least four of the seven comparators fail, ranked by failure count. Second priority: GRACE finishes strictly before every other successful method, ranked by relative step advantage over the earliest successful comparator. Ties are identified separately. The main showcase retains one case per task; ten supplemental cases show additional distinct initial scenes. Aggregate performance is reported separately in the paper.",
+  "selection_rule": "Selected qualitative examples from seven registered seeds, with the same seed, task and initial state for all eight methods in each comparison. GRACE success is required. First priority: at least four of the seven comparators fail, ranked by failure count. Second priority: GRACE finishes strictly before every other successful method, ranked by relative step advantage over the earliest successful comparator. Ties are identified separately. The main showcase retains one case per task; ten supplemental cases show additional distinct initial scenes. Featured examples also undergo visual review for clear task completion. Aggregate performance is reported separately in the paper.",
   "completion_measure": "Recorded execution steps to first success, with one frame per step at 24 fps. Completion comparisons describe task execution progress; policy inference time is excluded.",
   "methods": [
     "Native",
@@ -70,11 +70,11 @@
       "rendered_frames": 476
     },
     {
-      "case_id": "task06_init33_seed27",
+      "case_id": "task06_init27",
       "title": "Carry both objects through.",
       "description": "Place the mug and pudding in their destinations.",
-      "video": "assets/highlights/task06_init33_seed27_grace.mp4",
-      "poster": "assets/posters/task06_init33_seed27_scene.jpg",
+      "video": "assets/highlights/task06_init27_grace.mp4",
+      "poster": "assets/posters/task06_init27_scene.jpg",
       "rendered_frames": 266
     },
     {
@@ -202,123 +202,131 @@
       "thumbnail": "assets/posters/task08_init21_scene.jpg"
     },
     {
-      "case_id": "task06_init33_seed27",
+      "case_id": "task06_init27",
       "task_id": 6,
-      "init_index": 33,
-      "seed": 27,
+      "init_index": 27,
+      "seed": 7,
       "description": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
-      "overview_video": "comparison_videos/task06_init33_seed27_all_methods.mp4",
+      "overview_video": "comparison_videos/task06_init27_all_methods.mp4",
       "showcase_group": "main",
       "advantage": {
         "grace_completion_step": 241,
         "failed_comparators": [
           "Native",
-          "SEAM",
           "RTC",
           "POTR",
-          "DVAC",
           "PACE"
         ],
         "faster_than": [
           {
+            "method": "SEAM",
+            "completion_step": 351,
+            "steps_saved": 110,
+            "step_reduction_fraction": 0.31339
+          },
+          {
             "method": "BID-Backward",
-            "completion_step": 453,
-            "steps_saved": 212,
-            "step_reduction_fraction": 0.467991
+            "completion_step": 267,
+            "steps_saved": 26,
+            "step_reduction_fraction": 0.097378
+          },
+          {
+            "method": "DVAC",
+            "completion_step": 358,
+            "steps_saved": 117,
+            "step_reduction_fraction": 0.326816
           }
         ],
         "tied_completion": [],
         "earliest_successful_completion": true,
         "strictly_earliest_successful_completion": true,
-        "earliest_comparator_completion_step": 453,
-        "lead_steps": 212,
-        "lead_fraction": 0.46799117,
+        "earliest_comparator_completion_step": 267,
+        "lead_steps": 26,
+        "lead_fraction": 0.097378277,
         "majority_comparators_fail": true
       },
       "failed_comparators": [
         "Native",
-        "SEAM",
         "RTC",
         "POTR",
-        "DVAC",
         "PACE"
       ],
       "methods": [
         {
           "method": "Native",
           "slug": "native",
-          "video": "single_method_videos/task06_init33_seed27_native.mp4",
+          "video": "single_method_videos/task06_init27_native.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init33_seed27_native.jpg"
+          "poster": "assets/posters/task06_init27_native.jpg"
         },
         {
           "method": "SEAM",
           "slug": "seam",
-          "video": "single_method_videos/task06_init33_seed27_seam.mp4",
-          "success": false,
-          "recorded_action_steps": 520,
+          "video": "single_method_videos/task06_init27_seam.mp4",
+          "success": true,
+          "recorded_action_steps": 351,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init33_seed27_seam.jpg"
+          "poster": "assets/posters/task06_init27_seam.jpg"
         },
         {
           "method": "RTC",
           "slug": "rtc",
-          "video": "single_method_videos/task06_init33_seed27_rtc.mp4",
+          "video": "single_method_videos/task06_init27_rtc.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init33_seed27_rtc.jpg"
+          "poster": "assets/posters/task06_init27_rtc.jpg"
         },
         {
           "method": "POTR",
           "slug": "potr",
-          "video": "single_method_videos/task06_init33_seed27_potr.mp4",
+          "video": "single_method_videos/task06_init27_potr.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init33_seed27_potr.jpg"
+          "poster": "assets/posters/task06_init27_potr.jpg"
         },
         {
           "method": "BID-Backward",
           "slug": "bid_backward",
-          "video": "single_method_videos/task06_init33_seed27_bid_backward.mp4",
+          "video": "single_method_videos/task06_init27_bid_backward.mp4",
           "success": true,
-          "recorded_action_steps": 453,
+          "recorded_action_steps": 267,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init33_seed27_bid_backward.jpg"
+          "poster": "assets/posters/task06_init27_bid_backward.jpg"
         },
         {
           "method": "DVAC",
           "slug": "dvac",
-          "video": "single_method_videos/task06_init33_seed27_dvac.mp4",
-          "success": false,
-          "recorded_action_steps": 520,
+          "video": "single_method_videos/task06_init27_dvac.mp4",
+          "success": true,
+          "recorded_action_steps": 358,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init33_seed27_dvac.jpg"
+          "poster": "assets/posters/task06_init27_dvac.jpg"
         },
         {
           "method": "PACE",
           "slug": "pace",
-          "video": "single_method_videos/task06_init33_seed27_pace.mp4",
+          "video": "single_method_videos/task06_init27_pace.mp4",
           "success": false,
           "recorded_action_steps": 520,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init33_seed27_pace.jpg"
+          "poster": "assets/posters/task06_init27_pace.jpg"
         },
         {
           "method": "GRACE",
           "slug": "grace",
-          "video": "single_method_videos/task06_init33_seed27_grace.mp4",
+          "video": "single_method_videos/task06_init27_grace.mp4",
           "success": true,
           "recorded_action_steps": 241,
           "rendered_frames": 521,
-          "poster": "assets/posters/task06_init33_seed27_grace.jpg"
+          "poster": "assets/posters/task06_init27_grace.jpg"
         }
       ],
-      "poster": "assets/posters/task06_init33_seed27_overview.jpg",
-      "thumbnail": "assets/posters/task06_init33_seed27_scene.jpg"
+      "poster": "assets/posters/task06_init27_overview.jpg",
+      "thumbnail": "assets/posters/task06_init27_scene.jpg"
     },
     {
       "case_id": "task00_init18",
